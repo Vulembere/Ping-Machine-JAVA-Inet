@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="755.0" prefWidth="1297.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIControllers.MainController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.0" prefWidth="1298.0">
+         <children>
+            <AnchorPane layoutX="227.0" layoutY="11.0" prefHeight="54.0" prefWidth="1017.0" style="-fx-background-color: #394559;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox layoutX="14.0" layoutY="13.0" prefHeight="24.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/logo3.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="10.0" text="   " />
+                        <Label prefHeight="24.0" prefWidth="72.0" text="IPScan" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="28.0" prefWidth="95.0" text="Vulembere" textFill="#c3c3c3">
+                           <font>
+                              <Font name="Century Gothic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Separator layoutX="9.0" layoutY="114.0" prefHeight="0.0" prefWidth="1225.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="114.0" />
+            <Text fill="#727070" layoutX="10.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IPSCan est une application qui liste toutes les machines connectées dans le même réseau que vous et vous avertit si une machine se déconnecte. Elle offre également la possibilité de vous faire les heures et les dates où la machine se connecte souvent dans le réseau." wrappingWidth="951.13671875">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="218.0" layoutY="115.0" prefHeight="638.0" prefWidth="1032.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="117.0">
+               <children>
+                  <ListView fx:id="listeMachine" focusTraversable="false" layoutX="48.0" layoutY="33.0" prefHeight="605.0" prefWidth="355.0" style="-fx-background-color: white; -fx-border-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="33.0" />
+                  <Label layoutX="7.0" layoutY="6.0" prefHeight="18.0" prefWidth="193.0" text="Liste des Machines" AnchorPane.leftAnchor="7.0">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="display" layoutX="362.0" layoutY="41.0" prefHeight="605.0" prefWidth="887.0" style="-fx-background-color: white; -fx-border-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="362.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </TextArea>
+                  <Label alignment="CENTER" layoutX="1056.0" layoutY="3.0" prefHeight="24.0" prefWidth="103.0" style="-fx-border-color: #394559; -fx-background-radius: #394559; -fx-border-radius: 20;" text="Graphique">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="927.0" layoutY="3.0" prefHeight="24.0" prefWidth="103.0" style="-fx-border-color: #394559; -fx-background-radius: #394559; -fx-border-radius: 20;" text="Console">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="btnStart" alignment="CENTER" layoutX="1183.0" layoutY="2.0" onMouseClicked="#Start" prefHeight="24.0" prefWidth="103.0" style="-fx-border-color: red; -fx-background-radius: #394559; -fx-border-radius: 20;" text="Start" textFill="RED">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

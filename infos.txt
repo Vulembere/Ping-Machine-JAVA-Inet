@@ -1,0 +1,4 @@
+IPSCan est une application qui liste toutes les machines connectées dans le même réseau que vous 
+et vous avertit si une machine se déconnecte. 
+Elle offre également la possibilité de vous faire les heures et les dates où
+la machine se connecte souvent dans le réseau.
